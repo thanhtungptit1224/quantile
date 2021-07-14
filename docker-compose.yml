@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  quantile:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: quantile
+    ports:
+      - 8080:8080
